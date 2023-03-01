@@ -1,0 +1,367 @@
+body{
+    background-color: #F3F7EA;
+    margin: 0;
+    overflow: scroll;
+}
+.firstframe{
+    display: grid;
+    overflow: hidden;
+    position: relative;
+}
+h1{
+    text-align: center;
+}
+.green{
+    color: #1A3306;
+}
+.light{
+    color: #9ABE55;
+}
+.greenelement{
+    background-color: #9ABE55;
+    place-self: center;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+}
+.firstframe > button{
+    background-color: #9ABE55;
+    border-radius: 25px;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    transition: 0,01s;
+    position: absolute;
+    z-index: 1;
+    place-self: center;
+    bottom: 100px;
+}
+.firstframe > button:hover{
+    background-color: #1A3306;
+}
+.aboutus{
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px 60px;
+}
+.aboutus > button{
+    background-color: #9ABE55;
+    border-radius: 25px;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+.aboutus > button:hover{
+    background-color: #1A3306;
+}
+.information{
+    background-color: #ffffff;
+}
+.payment,
+.delivery,
+.return{
+    background-color: #F3F7EA;
+    text-align: center;
+    border-radius: 25px;
+}
+.sectionthree{
+    background-color: #ffffff;
+    padding-top: 50px;
+    display: grid;
+    row-gap: 30px;
+    place-content: center;
+}
+.glusia,
+.fittonia,
+.succulent{
+    background-color: #F3F7EA;
+    border-radius: 25px;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 500px;
+    height: 200px;
+    position: relative;
+}
+.glusia > img,
+.fittonia > img,
+.succulent > img{
+    grid-column: span 1;
+    position: relative;
+    bottom: -20px;
+}
+.glusia > .text,
+.fittonia > .text,
+.succulent > .text{
+    grid-column: span 2;
+    text-align: left;
+    margin-left: 20px;
+}
+.text > h3{
+    color: #1A3306;
+}
+.text > h4{
+    color: #9ABE55;
+}
+.buttons > button{
+    background-color: #9ABE55;
+    border-radius: 25px;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    height: 40px;
+}
+.buttons > button:nth-child(1){
+    width: 150px;
+}
+.buttons > button:nth-child(2){
+    width: 50px;
+}
+.buttons > button:hover{
+    background-color: #1A3306;
+}
+.sectionfour{
+    background-color: #ffffff;
+    display: grid;
+    row-gap: 30px;
+    padding-top: 50px;
+}
+.peter,
+.josefin{
+    background-color: #F3F7EA;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+.peter > .text,
+.josefin > .text{
+    grid-column: span 2;
+    text-align: left;
+    margin-left: 20px; 
+}
+.contacts{
+    background-color: #ffffff;
+    display: grid;
+}
+.form{
+    background-color: #F3F7EA;
+    display: grid;
+    border-radius: 25px;
+}
+.form > input{
+    border: solid 1px #9ABE55;
+    border-radius: 25px;
+    background-color: #F3F7EA;
+}
+.form > input:focus{
+    border-color: #1A3306;
+    background-color: #ffffff;
+    color: black;
+}
+.form > button{
+    background-color: #9ABE55;
+    border-radius: 25px;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    place-self: center;
+}
+.form > button:hover{
+    background-color: #1A3306;
+}
+
+
+
+@media screen and (min-width:630px) {
+    /* navbar */
+
+    .navbar{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding: 10px 20px;
+    }
+    .navbar > ul{
+        grid-column: 2/ span 3;
+    }
+    ul > li{
+        text-decoration: none;
+        float: left;
+        display: inline;
+        margin-left: 10px;
+    }
+    .client img{
+        max-width: 40px;
+    }
+    .client img:nth-child(1),
+    .client > img:nth-child(3){
+        display: none;
+    }
+    .client > button{
+        display: none;
+    }
+    .client{
+        grid-column: 5/ span 1;
+    }
+
+    /* frame 1 */
+    h1{
+        font-size: 50px;
+    }
+    .mainpic{
+        place-self: center;
+        max-width: 600px;
+        position: relative;
+        bottom: 70px;
+    }
+    .firstframe{
+        height: 550px;
+    }
+    .greenelement{
+        width: 500px;
+        height: 330px;
+    }
+    .firstframe > button{
+        width: 150px;
+        height: 50px;
+    }
+    
+    /* frame 2 */
+    .sectiontwo{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .sidepic{
+        display: none;
+    }
+    .aboutus > h2{
+        font-size: 40px;
+        width: 200px;
+    }
+    .aboutus{
+        height: 500px;
+    }
+    .aboutus > p{
+        font-size: 20px;
+    }
+    .aboutus > button{
+        width: 120px;
+        height: 50px;
+    }
+    /* information  */
+    .information{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        place-items: center;
+        height: 400px;
+    }
+    .payment,
+    .delivery,
+    .return{
+        width: 300px;
+    }
+
+    /* section 3 */
+
+    .sectionthree > h2{
+        font-size: 40px;
+        text-align: center; 
+    }
+
+    /* section 4 */
+
+    .sectionfour > h2{
+        font-size: 40px;
+        margin-left: 50px;
+    }
+    .peter > img,
+    .josefin > img{
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+    .peter,
+    .josefin{
+        width: 500px;
+        height: 300px;
+        place-self: center;
+        border-radius: 25px;
+        padding: 0 30px;
+    }
+    .peter > .text,
+    .josefin > .text{
+        width: 300px;
+    }
+    
+    /* contacts */
+
+    .form{
+        grid-template-columns: 1fr;
+        width: 550px;
+        height: 400px;
+        place-self: center;
+        padding: 30px;
+        
+    }
+    .contacts > h2{
+        margin-top: 70px;
+        font-size: 40px;
+        text-align: center;
+    }
+    .form > input{
+        width: 500px;
+        height: 50px;
+        place-self: center;
+    }
+    .form > button{
+        width: 100px;
+        height: 40px;
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width:768px) {
+    .form > button{
+        width: 150px;
+        height: 50px;
+        margin-top: 10px;
+    }
+    .client{
+        grid-column: 4/ span 2;
+        place-self: end;
+        margin-right: 20px;
+    }
+    .client img:nth-child(1),
+    .client > img:nth-child(3){
+        width: 40px;
+        height: 40px;
+        display: inline;
+        margin-left: 5px;
+
+    }
+    .client > button{
+        display: inline;
+        border: none;
+        background-color: #F3F7EA;
+        margin-right: 10px;
+    }
+    .navbar > ul{
+        grid-column: 2/ span 2;
+        place-self: center;
+    }
+    .greenelement{
+        width: 600px;
+    }
+}
+
+
+
+
+
+/* #9ABE55; */
+/* #1A3306 */
+/* #F3F7EA */
