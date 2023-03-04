@@ -362,6 +362,15 @@ h1{
         width: 700px;
         height: 350px;
     }
+    .information{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+        padding: 0px 40px;
+    }
+    .information > div{
+        width: 280px;
+    }
 }
 
 
