@@ -400,6 +400,128 @@ h1{
         font-size: 20px;
     }
 }
+@media screen and (min-width:1280px) {
+    .navbar{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .logo{
+        grid-column: span 1;
+        place-self: center;
+    }
+    .navbar > ul{
+        grid-column: span 1;
+        place-self: center;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .client{
+        grid-column: span 1; 
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    /* frame 1 */
+    h1{
+        font-size: 65px;
+    }
+    .firstframe{
+        height: auto;
+    }
+    .greenelement{
+        width: 900px;
+        height: 400px;
+    }
+    .mainpic{
+        max-width: 700px;
+        bottom: 50px;
+    }
+    .firstframe >button{
+        bottom: 150px;
+    }
+
+    /* section 2 */
+
+    .sidepic{
+        width: 500px;
+        height: 500px;
+        grid-column: span 2;
+    }
+    .aboutus{
+       width: 700px; 
+    }
+    .aboutus > h2{
+        font-size: 50px;
+        width: 300px;
+    }
+    .aboutus > p{
+        font-size: 27px;
+    }
+
+    /* information */
+
+    .information > div{
+        width: 350px;
+    }
+    .information div > h3{
+        font-size: 25px;
+    }
+
+    /* section 3 */
+    .sectionthree{
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+    .sectionthree > h2{
+        font-size: 50px;
+    }
+
+    /* section 4 */
+    .sectionfour{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        padding-top: 150px;
+    }
+    .sectionfour > h2{
+        grid-column: span 2;
+        font-size: 50px;
+    }
+
+    /* form */
+    .form{
+        width: 1000px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .form > input:nth-child(1),
+    .form > input:nth-child(2){
+        width: 400px;
+        place-self: left;
+    }
+    .form > input:nth-child(3){
+        grid-column: span 2;
+        height: 200px;
+        width: 900px;
+    }
+    .form > button{
+        grid-column: span 2;
+    }
+    
+}
+@media screen and (min-width:1440px){
+    .sectionthree{
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+    }
+    .sectionthree > h2{
+        grid-column: span 3;
+    }
+    .sectionthree > div{
+        width: 450px;
+    }  
+}
 
 
 
